@@ -1,8 +1,8 @@
 import React from 'react';
-import './Cart.css';
+import './Cart.css'
 const Cart = (props) => {
-    const cart = props.cart;
-    //Total price process in reduce process ,just uncomment the below line and comment out the for loop process
+    const cart=props.cart;
+   //Total price process in reduce process ,just uncomment the below line and comment out the for loop process
     // const totalPrice=cart.reduce((total,prod)=>total+prod.price,0)
     //Total price process by for loop
     let total = 0;
@@ -26,13 +26,14 @@ const Cart = (props) => {
 const grandTotal=(total + shipping+Number(tax)).toFixed(2);
 console.log(total,shipping)
     return (
-        <div>
+        <div className='cart'>
             <h3>Order Summary</h3>
             <p>Items Ordered: {cart.length}</p>
             <p>Product Price: ${total.toFixed(2)}</p>
             <p><small>Shipping: ${shipping}</small></p>
             <p><small>Tax + Vat: ${tax}</small></p>
-            <p>Total Price: ${grandTotal}</p>
+            <h6>Total Price: ${grandTotal}</h6> <br/>
+            <button className='btn btn-lg btn-primary'>Checkout</button>
         </div>
     );
 };

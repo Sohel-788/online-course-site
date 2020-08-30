@@ -1,18 +1,39 @@
 import React from 'react';
-import logo from '../../images/logo.png';
+import logo from '../../Images/logo.jpg';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './Header.css';
 const Header = () => {
     return (
+
         <div className='header'>
-            <img src={logo} alt=""/>
-        <nav>
-            <a href="/shop">Shop</a>
-            <a href="/review">Order Review</a>
-            <a href="/manage">Manage Inventory</a>
-        </nav>
+            {/* <nav>
+                <img className='logo' src={logo} alt="" />
+                <a href="/home">Home</a>
+                <a href="/course">Courses</a>
+            </nav> */}
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a className="navbar-brand" href="/"><img className='logo' src={logo} alt="" /></a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item ">
+                                <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link active" href="/">Courses</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     );
 };
-
 
 export default Header;

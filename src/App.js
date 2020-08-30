@@ -1,20 +1,17 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
-import Shop from './components/Enrol/Enrol';
+import Courses from './components/Course/Course';
+// import Enrol from './components/Enrol/Enrol';
 
 function App() {
   return (
     <div>
       <Header></Header>
-      <Shop></Shop>
+      <Courses></Courses>
     </div>
   );
 
 }
 
 export default App;
-
-// copy paste the below code in product.js file and npm start 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'

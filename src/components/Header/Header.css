@@ -1,9 +1,13 @@
-
+.header{
+    vertical-align: center;
+}
+.header .logo{
+    margin-right: 200px;
+}
 .header img{
     height: 80px;
-    margin: 0 auto;
     display: flex;
-    margin-bottom: 20px;
+    cursor: pointer;
 }
 .header nav{
     line-height: 40px;
@@ -16,9 +20,13 @@
     font-size: 20px;
     text-decoration:none;
     margin-right: 20px;
-    padding:7px 5px;
-    transition:.4s all ease;
+  
 }
-.header nav a:hover{
-    background:gray
+/* //Bootstrap class style editing */
+.navbar{
+    padding:0;
+}
+.navbar-brand{
+    padding-top: 0;
+    padding-bottom: 0;
 }
